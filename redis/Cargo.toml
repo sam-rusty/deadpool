@@ -28,7 +28,7 @@ cluster = ["redis/cluster-async"]
 deadpool = { path = "../", version = "0.11.0", default-features = false, features = [
     "managed",
 ] }
-redis = { version = "0.25", default-features = false, features = ["tls-native-tls", "tokio-comp"] }
+redis = { version = "0.25", default-features = false, features = ["tokio-native-tls-comp", "tokio-comp"] }
 serde = { package = "serde", version = "1.0", features = [
     "derive",
 ], optional = true }
