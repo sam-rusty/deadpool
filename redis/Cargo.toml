@@ -19,7 +19,7 @@ rustdoc-args = ["--cfg", "docsrs"]
 
 [features]
 default = ["rt_tokio_1"]
-rt_tokio_1 = ["deadpool/rt_tokio_1", "redis/tokio-comp", "redis/tls-native-tls", "redis/tokio-native-tls"]
+rt_tokio_1 = ["deadpool/rt_tokio_1", "redis/tls-native-tls"]
 rt_async-std_1 = ["deadpool/rt_async-std_1", "redis/async-std-comp"]
 serde = ["deadpool/serde", "dep:serde"]
 cluster = ["redis/cluster-async"]
